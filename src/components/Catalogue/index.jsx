@@ -14,11 +14,11 @@ class Catalogue extends Component {
       errors: {
         productName: {
           active: false,
-          message: 'Product name cannot be empty'
+          message: ''
         },
         productPrice: {
           active: false,
-          message: 'Product price cannot be empty'
+          message: ''
         },
       },
     }
@@ -51,7 +51,6 @@ class Catalogue extends Component {
 
     if (productName === '') {
       isProductNameEmpty = true;
-
     }
 
     if (productPrice === '') {
@@ -142,7 +141,6 @@ class Catalogue extends Component {
                 </div>
               </div>
             </form>
-
           </Modal>
         </div>
       </section>
@@ -161,5 +159,3 @@ export default connect(
   null,
   mapDispatchToProps
 )(Catalogue)
-
-// https://www.valentinog.com/blog/redux/

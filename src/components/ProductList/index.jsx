@@ -50,11 +50,7 @@ const mapStateToProps = (state, props) => ({
   products: state.products
 })
 
-
-
 export default connect(
   mapStateToProps,
   null
 )(ProductList)
-
-// https://www.valentinog.com/blog/redux/
